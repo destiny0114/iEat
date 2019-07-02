@@ -1,0 +1,32 @@
+@import "typographic/font";
+@import "abstracts/config";
+
+@import "layout/navbar";
+@import "layout/socialbar";
+
+@import "pages/home";
+@import "pages/portfolio";
+@import "pages/1st-gallery";
+@import "pages/2nd-gallery";
+@import "pages/3rd-gallery";
+@import "pages/about";
+@import "pages/book";
+@import "pages/contact";
+@import "pages/blog";
+@import "pages/theholidayspecial";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#site_header-placeholder {
+  height: 100px;
+  display: block;
+}

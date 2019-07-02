@@ -1,0 +1,112 @@
+.about-container {
+  width: calc(100% - 160px);
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  .about-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .about-profile-img {
+      grid-column: 1/2;
+      grid-row: 1;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .about-info {
+      grid-column: 2/3;
+      grid-row: 1;
+      background-color: #eff1f5;
+
+      display: grid;
+      grid-template-rows: min-content min-content min-content 1fr;
+      grid-template-columns: 100%;
+      padding-bottom: 5em;
+
+      .about-info-person {
+        position: relative;
+        left: 18px;
+        margin: 156px 0px 27px calc((100% - 490px) * 0.5);
+        width: 430px;
+
+        span {
+          font: normal normal normal 40px/1.4em Cinzel, serif;
+          line-height: 1.2em;
+          letter-spacing: 0.05em;
+          color: #303131;
+          margin-bottom: 1em;
+          display: block;
+        }
+
+        p {
+          font: normal normal normal 16px/1.4em Avenir-light, sans-serif;
+          color: #303131;
+          line-height: 1.5em;
+          display: block;
+        }
+      }
+
+      .about-info-education {
+        position: relative;
+        left: 18px;
+        margin: 2em 0px 13px calc((100% - 490px) * 0.5);
+        width: 430px;
+
+        span {
+          font: normal normal normal 20px/1.4em Avenir-light, serif;
+          line-height: 1.2em;
+          letter-spacing: 0.05em;
+          color: #303131;
+          margin-bottom: 0.5em;
+          display: block;
+        }
+
+        p {
+          font: normal normal normal 16px/1.4em Avenir-light, sans-serif;
+          color: #303131;
+          line-height: 1.5em;
+          display: block;
+        }
+      }
+
+      .about-info-award {
+        position: relative;
+        left: 18px;
+        margin: 2em 0px 12px calc((100% - 490px) * 0.5);
+        width: 430px;
+
+        span {
+          font: normal normal normal 20px/1.4em Avenir-light, serif;
+          line-height: 1.2em;
+          letter-spacing: 0.05em;
+          color: #303131;
+          margin-bottom: 0.5em;
+          display: block;
+        }
+
+        ul {
+          list-style: none;
+          width: 100%;
+          height: auto;
+          display: block;
+
+          li {
+            font: normal normal normal 16px/1.4em Avenir-light, sans-serif;
+            color: #303131;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

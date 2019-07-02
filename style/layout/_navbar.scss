@@ -1,0 +1,59 @@
+header {
+ background-color: $navbar-bg-color;
+ height: 100px;
+ position: fixed;
+ top: 0;
+ z-index: 2;
+ width: 100%;
+
+ nav {
+  .logo {
+   float: left;
+   margin-left: 80px;
+   margin-top: 42px;
+   justify-self: start;
+
+   a {
+    text-decoration: none;
+    color: $navbar-logo-color;
+    font: normal normal normal 26px/1.4em Cinzel, serif;
+   }
+  }
+
+  ul {
+   float: right;
+   list-style: none;
+   margin-right: 48px;
+   margin-top: 31px;
+   justify-self: end;
+   white-space: nowrap;
+
+   li {
+    display: inline-block;
+    width: 123px;
+    height: 50px;
+    font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+
+    a {
+     display: inline-block;
+     outline: none;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     line-height: 50px;
+     text-decoration: none;
+     color: $navbar-logo-color;
+     transition: color 0.4s ease 0s;
+
+     &:hover {
+      color: $navbar-nav-color-hover;
+     }
+    }
+
+    a[class="active"] {
+     color: $navbar-nav-color-active;
+    }
+   }
+  }
+ }
+}

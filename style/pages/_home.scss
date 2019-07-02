@@ -1,0 +1,94 @@
+.content {
+ display: block;
+ width: 100%;
+ height: 900px;
+ left: 0;
+ margin-bottom: 20px;
+
+ .content-wrapper {
+  position: relative;
+  width: calc(100% - 160px);
+  height: 100%;
+  margin: 0 auto;
+
+  .bg {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 0;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   overflow: hidden;
+
+   .img-overlay {
+    background-color: rgb(39, 58, 78);
+    opacity: 0.29;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+   }
+
+   .image {
+    img {
+     width: 100%;
+     height: 100%;
+    }
+   }
+  }
+ }
+
+ .title {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+
+  .title-wrapper {
+   position: absolute;
+   text-align: center;
+   width: 980px;
+   margin: 327px 0px 3px calc((100% - 980px) * 0.5);
+
+   h2 {
+    font: normal normal normal 70px/1.4em Cinzel, serif;
+    letter-spacing: 0.1em;
+    color: $title-color;
+    text-transform: uppercase;
+   }
+
+   p {
+    letter-spacing: 0.55em;
+    font: normal normal normal 20px/1.4em Avenir-Light, sans-serif;
+    color: $title-color;
+    text-transform: uppercase;
+    margin: 10px -20px 30px calc((100% - 980px) * 0.5);
+   }
+
+   a {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    border: $viewmore-btn;
+    text-decoration: none;
+    height: 40px;
+    width: 142px;
+    min-height: 22px;
+    margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+    position: absolute;
+    left: 419px;
+    align-items: center;
+    padding-top: 10px;
+    color: $viewmore-btn-color;
+    font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+    transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+
+    &:hover {
+     border-color: transparent;
+     background-color: $viewmore-color-hover;
+    }
+   }
+  }
+ }
+}

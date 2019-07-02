@@ -1,0 +1,119 @@
+.book-container {
+  width: calc(100% - 160px);
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  .book-wrapper {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .one {
+      grid-column: 1;
+      grid-row: 1/2;
+    }
+
+    .two {
+      grid-column: 1;
+      grid-row: 2/3;
+    }
+
+    .three {
+      grid-column: 1;
+      grid-row: 3/4;
+    }
+
+    .book-item {
+      width: 100%;
+      min-height: 720px;
+      background-color: #f0f3f6;
+      position: relative;
+
+      .book-content {
+        position: absolute;
+        width: 100%;
+        height: auto;
+
+        h1 {
+          position: relative;
+          width: 445px;
+          margin: 213px 0px 20px calc((100% - 980px) * 0.5);
+          font: normal normal normal 64px/1.4em Cinzel, serif;
+          color: #141d27;
+          line-height: 1.1em;
+          left: 34px;
+        }
+
+        p {
+          position: relative;
+          left: 42px;
+          width: 355px;
+          margin: 0px 0px 27px calc((100% - 980px) * 0.5);
+          line-height: 1.5em;
+          font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+        }
+
+        .price {
+          position: relative;
+          width: 101px;
+          margin: 1px 0px 10px calc((100% - 980px) * 0.5);
+          left: 44px;
+          letter-spacing: 0.1em;
+          font: normal normal normal 64px/1.4em Cinzel, serif;
+          color: #141d27;
+
+          span {
+            font: normal normal normal 24px/1.4em Cinzel, serif;
+            color: #303131;
+            position: relative;
+            top: -40px;
+          }
+        }
+
+        a {
+          position: relative;
+          display: flex;
+          height: 40px;
+          width: 135px;
+          min-height: 22px;
+          margin: 0px 0px 10px calc((100% - 980px) * 0.5);
+          top: -70px;
+          left: 250px;
+          align-items: center;
+          padding-top: 10px;
+          color: #303131;
+          font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+          transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s, color 0.4s ease 0s;
+          background-color: transparent;
+          border: solid #303131 1px;
+          text-decoration: none;
+          justify-content: center;
+
+          &:hover {
+            border-color: transparent;
+            background-color: #273a4e;
+            color: white;
+          }
+        }
+      }
+
+      .book-img {
+        position: absolute;
+        width: 600px;
+        height: 438px;
+        left: 477px;
+        margin: 141px 0px 10px calc((100% - 980px) * 0.5);
+
+        img {
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

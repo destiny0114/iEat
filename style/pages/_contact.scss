@@ -1,0 +1,203 @@
+.contact-container {
+ width: calc(100% - 160px);
+ height: auto;
+ margin: 0 auto;
+ padding-bottom: 20px;
+
+ .contact-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+
+  .contact-img {
+   grid-column: 1/2;
+   grid-row: 1;
+
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   }
+  }
+ }
+
+ .contact-content {
+  grid-column: 2/3;
+  grid-row: 1;
+  background-color: #eff1f5;
+
+  display: grid;
+  grid-template-rows: min-content min-content min-content min-content 1fr;
+  grid-template-columns: 100%;
+  //padding-bottom: 5em;
+
+  .contact-content-title {
+   width: 474px;
+   position: relative;
+   left: 6px;
+   margin: 156px 0px 38px calc((100% - 481px) * 0.5);
+   line-height: 1.1em;
+   font: normal normal normal 40px/1.4em Cinzel, serif;
+   color: #303131;
+  }
+
+  p {
+   width: 369px;
+   position: relative;
+   left: 6px;
+   margin: 0px 0px 41px calc((100% - 481px) * 0.5);
+   font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+   color: #303131;
+   line-height: 1.5em;
+  }
+
+  .contact-content-info {
+   width: 379px;
+   position: relative;
+   left: 6px;
+   margin: 0px 0px 26px calc((100% - 481px) * 0.5);
+   font: normal normal normal 16px/1.4em Avenir-Light, sans-serif;
+   color: #303131;
+   line-height: 1.5em;
+  }
+
+  .form-container {
+   position: relative;
+   margin: 0px 0px 70px calc((100% - 481px) * 0.5);
+   left: -9px;
+
+   form {
+    width: 379px;
+    height: auto;
+
+    &>* {
+     display: block;
+    }
+
+    #name,
+    #email,
+    #subject {
+     width: 100%;
+     min-height: 33px;
+     margin: 15px 0 -10px 0;
+     position: relative;
+     left: 11px;
+     padding: 3px 3px 3px 12px;
+     border-radius: 0;
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgba(48, 49, 49, 0.55);
+     background-color: rgba(240, 243, 246, 1);
+     color: #303131;
+     font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+     line-height: 33px;
+
+     &:focus {
+      outline: none;
+      border-width: 3px;
+     }
+    }
+
+    #message {
+     width: 100%;
+     min-height: 126px;
+     margin: 15px 0 6px 0;
+     position: relative;
+     left: 11px;
+     padding: 10px 3px 3px 16px;
+     border-radius: 0;
+     border-width: 1px;
+     border-style: solid;
+     border-color: rgba(48, 49, 49, 0.55);
+     background-color: rgba(240, 243, 246, 1);
+     color: #303131;
+     font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+     line-height: 33px;
+
+     &:focus {
+      outline: none;
+      border-width: 3px;
+     }
+    }
+
+    #submit {
+     width: 102px;
+     height: 33px;
+     text-decoration: none;
+     background-color: rgba(39, 58, 78, 1);
+     border: none;
+     position: relative;
+     left: 288px;
+     cursor: pointer;
+     font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+     color: #ffffff;
+     transition: background-color 0.4s ease 0s;
+
+     &:hover {
+      background-color: #5C6B7A;
+     }
+    }
+   }
+  }
+
+  .subscribe-container {
+   width: 379px;
+   height: auto;
+   margin: 0px 0px 84px calc((100% - 481px) * 0.5);
+
+   span {
+    width: 100%;
+    margin: 10px 0px 12px 0;
+    position: relative;
+    left: 11px;
+    line-height: 1.4em;
+    color: #303131;
+    font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+   }
+
+   #email2 {
+    width: 60%;
+    min-height: 33px;
+    position: relative;
+    left: 11px;
+    padding: 3px 3px 3px 21px;
+    border-radius: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(48, 49, 49, 0.55);
+    background-color: rgba(240, 243, 246, 1);
+    color: #303131;
+    font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+    line-height: 33px;
+    margin-top: 12px;
+
+    &:focus {
+     outline: none;
+     border-width: 3px;
+    }
+   }
+
+   #submit2 {
+    width: 35%;
+    height: 33px;
+    text-decoration: none;
+    background-color: rgba(39, 58, 78, 1);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    font: normal normal normal 16px/1.4em Avenir-Light, sans-serif !important;
+    color: #ffffff;
+    transition: background-color 0.4s ease 0s;
+    float: right;
+    margin-top: 12px;
+
+    &:hover {
+     background-color: #5C6B7A;
+    }
+   }
+  }
+ }
+}
